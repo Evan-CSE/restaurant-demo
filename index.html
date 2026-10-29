@@ -541,7 +541,7 @@ html[dir="rtl"] .drawer{transform:translateX(-105%)}
    1. YOUR STUDIO: shown in the concept banner at the top of the page.
    ===================================================================== */
 const STUDIO = {
-  name: "Your Studio",          // your name / studio name
+  name: "Evan Shareef",         // your name / studio name
   whatsapp: "",                 // e.g. "8801XXXXXXXXX" (digits only); used by "Get this website"
   showBanner: true              // set false when the restaurant buys and you hand it over
 };
@@ -1021,7 +1021,7 @@ function renderStatic() {
     t("note.kcal"),
     `© ${new Date().getFullYear()} ${esc(nm())}`
   ];
-  if (STUDIO.showBanner) legal.push(esc(t("foot.concept", { s: EVAN.SHAREEF })));
+  if (STUDIO.showBanner) legal.push(esc(t("foot.concept", { s: STUDIO.name })));
   $("#legal").innerHTML = legal.map(s => `<span>${s}</span>`).join("");
 
   // concept banner
